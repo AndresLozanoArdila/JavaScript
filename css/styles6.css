@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .shape-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .shape-card:hover {
+    background-color: #f5f5f5;
+  }
+  
+  .buttons {
+    margin-top: 10px;
+  }
+  
+  .buttons button {
+    margin-right: 10px;
+  }
+  
+  .modal {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    max-width: 400px;
+  }
+  
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  label {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  input[type="number"] {
+    width: 100%;
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+  }
+  
+  button {
+    display: block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  #resultContainer {
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  

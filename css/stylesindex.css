@@ -1,0 +1,56 @@
+/* Estilos para el encabezado */
+header {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+/* Estilos para la navegación */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px;
+}
+
+nav ul li a:hover {
+    color: #999;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos para los datos personales */
+.personal-info {
+    margin-top: 20px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+}

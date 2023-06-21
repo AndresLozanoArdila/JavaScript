@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Eventos JavaScript</title>
+    <link rel="stylesheet" type="text/css" href="css/styles2.css">
+</head>
+<body>
+    <h1>Eventos JavaScript</h1>
+    <table>
+        <tr>
+            <th>Evento</th>
+            <th>Ejemplo aplicación</th>
+        </tr>
+        <tr>
+            <td>click</td>
+            <td id="click-example">Haz clic aquí</td>
+        </tr>
+        <tr>
+            <td>mouseover</td>
+            <td id="mouseover-example">Pasa el cursor aquí</td>
+        </tr>
+        <tr>
+            <td>keydown</td>
+            <td id="keydown-example">Presiona una tecla aquí</td>
+        </tr>
+        <tr>
+            <td>submit</td>
+            <td>
+                <form id="submit-example" onsubmit="event.preventDefault(); alert('El formulario ha sido enviado')">
+                    <input type="submit" value="Envía el formulario">
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>load</td>
+            <td onload="alert('La página ha sido cargada')">Cargar página</td>
+        </tr>
+        <tr>
+            <td>mouseenter</td>
+            <td onmouseenter="alert('El cursor ha entrado en el elemento')">Entra aquí</td>
+        </tr>
+        <tr>
+            <td>mouseleave</td>
+            <td onmouseleave="alert('El cursor ha salido del elemento')">Sale de aquí</td>
+        </tr>
+        <tr>
+            <td>change</td>
+            <td>
+                <select id="change-example" onchange="alert('El valor ha cambiado')">
+                    <option value="1">Opción 1</option>
+                    <option value="2">Opción 2</option>
+                    <option value="3">Opción 3</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>contextmenu</td>
+            <td oncontextmenu="alert('Has hecho clic derecho'); return false">Haz clic derecho aquí</td>
+        </tr>
+        <tr>
+            <td>scroll</td>
+            <td onscroll="alert('El elemento se ha desplazado')">Desplázate aquí</td>
+        </tr>
+    </table>
+
+    <script>
+        document.getElementById('click-example').addEventListener('click', function() {
+            alert('Haz hecho clic en el elemento');
+        });
+
+        document.getElementById('mouseover-example').addEventListener('mouseover', function() {
+            alert('El cursor está sobre el elemento');
+        });
+
+        document.getElementById('keydown-example').addEventListener('keydown', function() {
+            alert('Presionaste una tecla en el teclado');
+        });
+    </script>
+</body>
+</html>
